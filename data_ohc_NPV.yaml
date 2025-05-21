@@ -1,0 +1,46 @@
+# General Parameters
+nHours: 8760               # number of hours per year
+Mfactor: 1000000           # a million, for ease of calculation
+elec_prices:     54
+h2_prices:       57        # EUR per MWh, Hydrogen price per MWh   
+
+
+Wind:
+
+  P_rated:         15         # Rated Power [MW]
+  ind_WF_no:       2          # Number of Individual Independant Wind farms (left)
+
+
+Electrical:
+
+  cvr_capacity:    2000       # MW, Converter (and cable) capacity
+  esr_cvr_connect: 1000      # MW, Interconnection capacity between converter and electrolyser 
+
+
+Electrolyser:
+
+  esr_capacity:    500        # MW, Electrolyser Capacity
+  esr_base:        0.1        # % Electrolyser Baseload
+  esr_no:          4       # Amount, Number of electrolysers
+  esr_eff:         0.79        # percentage, Electrolyser Efficiency
+
+
+Investment:
+
+  Capex_converter: 526.000000     # MEUR per 2 GW
+  Capex_cable:     344.118000     # MEUR per 2 GW
+  
+  Capex_wind:      1.610000       # MEUR per MW of Wind farm
+  Opex_wind:       0.047000       # MEUR per MW
+  Opex_var_wind:   0.000005       # MEUR per MWh
+  
+  Capex_esr:       3.656641       # MEUR per MW                 
+  Opex_esr:        0.065537       # MEUR per MW per year         
+ 
+  i:               0.0361 # 0.06         # Interest Rate for NL - 4%
+  u:               0.0334 # 0.02         # Annual inflation for NL - 2% (upsilon not u) 
+
+  T:               30             # Years, lifetime
+
+
+
